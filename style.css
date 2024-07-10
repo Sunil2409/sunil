@@ -1,0 +1,311 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.logo_toolbar {
+    display: inline-flex;
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    font-style: italic;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+    border: 5px solid white;
+    font-size: 150%;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.toolbar {
+    margin-top: 40px;
+    font-size: 120%;
+    display: inline-flex;
+    padding-left: 350px;
+}
+
+.toolbar div {
+    display: inline-flex;
+    padding-right: 70px;
+    cursor: pointer;
+}
+
+.toolbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar a:hover {
+    text-decoration: underline;
+}
+
+.about_me_image,
+.education,
+.experience,
+.skills,
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about_me_image {
+    flex-direction: row;
+    background-color: rgb(49, 52, 69);
+    padding: 20px;
+}
+
+.about_me {
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+    text-align: justify;
+    margin: 20px;
+}
+
+.image {
+    width: 400px;
+    border-radius: 5px;
+    height: 450px;
+}
+
+.experience {
+    background-color: rgb(180, 180, 180);
+    flex-direction: row;
+}
+
+.intern_image {
+    border-radius: 5px;
+    margin: 20px;
+    width: 500px;
+    height: 450px;
+}
+
+.internship {
+    border-radius: 5px;
+    background-color: rgb(180, 180, 180);
+    font-size: 120%;
+    text-align: justify;
+    padding: 10px;
+    margin: 20px;
+}
+
+.project_align {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.PROJECTS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(180, 180, 180);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.PROJECTS > div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.DR_image, .OL_image, .VP_image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.DR_image:hover,
+.OL_image:hover,
+.VP_image:hover {
+    opacity: 0.85;
+    box-shadow: 10px 10px 10px rgb(226, 16, 16);
+}
+
+.info, .info1, .info2 {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.skills {
+    background-color: rgb(180, 180, 180);
+}
+
+.skills_data {
+    width: 900px;
+    border-radius: 5px;
+    background-color: rgb(180, 180, 180);
+    font-size: 120%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.skill_image {
+    border-radius: 5px;
+    margin: 20px;
+    width: 500px;
+    height: 450px;
+}
+
+.contact {
+    padding: 20px;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-details span {
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    display: inline;
+}
+
+.education {
+    background-color: rgb(180, 180, 180);
+    flex-direction: row;
+}
+
+.education_align {
+    border-radius: 5px;
+    background-color: rgb(180, 180, 180);
+    font-size: 120%;
+    text-align: justify;
+    padding: 10px;
+    margin: 20px;
+}
+
+.education_image {
+    border-radius: 5px;
+    margin: 20px;
+    width: 500px;
+    height: 450px;
+}
+body {
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+.about_me,
+.internship,
+.skills_data,
+.education_align,
+.contact {
+    font-size: 25px; /* Increase font size */
+}
+
+/* You can adjust the font size as needed for each section */
+
+/* Optional: If you want to adjust the font size for specific elements within these sections, you can add additional CSS rules */
+.about_me h1,
+.internship h1,
+.skills h1,
+.education h1,
+.contact h1 {
+    font-size: 30px; /* Increase heading font size */
+}
+
+.about_me p,
+.internship p,
+.skills p,
+.education p,
+.contact p {
+    font-size: 20px; /* Increase paragraph font size */
+}
+.project_align p {
+    font-size: 30px; /* Increase font size for project section heading */
+}
+
+.info,
+.info1,
+.info2 {
+    font-size: 20px; /* Increase font size for project descriptions */
+}
+/* Your existing CSS styles */
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Add the new styles below your existing styles */
+
+.logo_toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    font-style: italic;
+}
+
+.toolbar {
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar div {
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* Add some padding to the body to prevent content from being hidden behind the toolbar */
+body {
+    padding-top: 70px; /* Adjust as needed depending on the height of your toolbar */
+}
+body {
+    padding-top: 70px; /* Adjust as needed depending on the height of your toolbar */
+}
+
+.project_align {
+    padding-top: 150px; /* Adjust as needed depending on the height of your toolbar and the space you want above the project section */
+}
