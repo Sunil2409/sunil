@@ -3,163 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Website</title>
+    <title>Sunil Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
-    <div class="logo_toolbar">
-        <div>
-            <img src="logo.png" alt="logo" class="logo">
-        </div>
-
-        <div class="toolbar">
-            <div class="about">
-                <a href="#about_section">About</a>
-            </div>
-
-            <div class="projects">
-                <a href="#projects_section">Projects</a>
-            </div>
-            
-            <div class="educations">
-                <a href="#education_section">Educations</a>
-            </div>
-            
-            <div class="work_experience">
-                <a href="#experience_section">Work Experience</a>
-            </div>
-            
-            <div class="certifications">
-                <a href="#skills_section">Skills</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">SK</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div id="about_section" class="about_me_image">
-        <div class="about_me">
-            <h1>🌈 About Me</h1>
-            🎨 Hello! I'm Sunil Kumar, an Electronics Engineer based in Chennai, Tamil Nadu.
-            With a strong foundation in technical knowledge and a passion for front-end development,
-            I specialize in creating seamless user experiences and visually compelling designs.
-            My goal is to craft digital interfaces that resonate with audiences and drive meaningful engagement.
-            <br>
-            <br>
-            I'm a creative thinker, a problem solver, and an avid learner, always exploring new trends and techniques in design.
-            And with a solid foundation in electronics and communication
-            principles and hands-on experience in simulation tools and programming.
-            <br>
-        </div>
-        <div><!--class = image-->
-            <img src="myphoto.jpeg" class="image">
-        </div>
-    </div>
-
-    <div id="projects_section" class="project_align">
-        <p>🚀PROJECTS</p>
-    </div>  
-       
-    <div class="PROJECTS"> 
-        <div ><!--class = Deeplearningproject-->
-            <img src="DR.png" alt="Diabetic Retinopathy" class="DR_image">
-            <p class="deep_learning"> DEEP LEARNING PROJECT</p>
-            <br>
-            <div class="info">
-            - To detect the presence of Diabetic Retinopathy in diabetes patient.<br>
-            - Role: Lead Designer<br>
-            - Tools: Google colab.<br>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Sunil Kumar</span></h1>
+                <p class="hero-subtitle">Full Stack Developer | Creative Problem Solver | Tech Enthusiast</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-circle">
+                    <i class="fas fa-user"></i>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div>
-            <img src="OP.png" alt="Object Detection using ultrasonic sensor" class="OL_image">
-            <p class="hardware_project">HARDWARE PROJECT</p>
-            <br>
-            <div class="info1">
-            - Designed and tested circuitry with op-amps and 555 Timers.<br>
-            - Role: Lead Designer<br>
-            - Tools: LTspice, 555 Timers, OP-amp, Ultrasonic Sensor.
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a developer passionate about building robust backend systems and debugging complex problems. With hands-on experience in Python and Django, I create scalable applications and take pride in writing clean, maintainable code that solves real-world problems.</p>
+                    <p>Beyond coding, I excel at troubleshooting, monitoring system performance, and optimizing applications. I'm committed to continuous learning and exploring new technologies to enhance my development skills.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="avatar-large">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
             </div>
-            <br>
         </div>
+    </section>
 
-        <div>
-            <img src="VP.png" alt="ALU with seven segment display" class="VP_image">
-            <p class="verilog_project">VERILOG PROJECT</p>
-            <br>
-            <div class="info2">
-            - Utilized Verilog for the design and simulation of ALU operations and Implemented the design on an FPGA board using Vivado Software.<br>
-            - Role: Designer<br>
-            - Tools: FPGA, vivado, Verilog
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript (Basic)</span>
+                        <span class="skill-tag">Django Templates</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Django REST Framework</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">API Development</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Debugging & Monitoring</span>
+                        <span class="skill-tag">Troubleshooting</span>
+                        <span class="skill-tag">System Administration</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="education_section" class="education">
-        <div class="education_align">
-            <h1>🎓 Education</h1>
-            <br>
-            <h3>Bachelor of Technology - Amrita Vishwa Vidyapeetham, Coimbatore| 2020 - Present</h3>
-            - Currently in 7th Semester with CGPA: 6.83
-            - Relevant coursework: Electronics and Communication, Front End Development
-            <br><br>
-            <h3>High School - Velammal Matriculation School, Chennai | 2018 - 2020</h3>
-            - Completed with the percentage of 73.3
-            - Relevant coursework: Biology, Maths, Physics and Chemistry
-            <br><br>
-            <h3>High School - St.Vincent Matriculation School, Chennai | 2013 - 2018</h3>
-            - Completed with the percentage of 89.4
-            <br>
-        </div> 
-        <img src="education.jpg" alt="education" class="education_image">
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-ledger"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ledger Pro Suite</h3>
+                        <p>A comprehensive financial management and accounting solution with advanced features for tracking expenses, managing budgets, and generating financial reports.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Finance Management</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sunil2409/ledger-pro-suite" class="project-link" target="_blank"><i class="fas fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
 
-    <div id="experience_section" class="experience">
-        <div class="internship">
-            <h1>💼 Experience</h1>
-            <h3>INTERNSHIP - IOT. | Sept 2021 - Nov 2021</h3><br>
-            - We built a robotic car that we could control just by typing commands into a
-            serial monitor<br>
-            - Then, we got into UiPath, this software that helps automate tasks. Our project
-            here was to formulate were sentences are positive or negative.<br> We set it up
-            so that when we gave it a link, it would grab the text, analyze it, and give us
-            the vibe of whether it was good or bad.<br>
-            - Lastly, we dived into MIT App Inventor, this cool platform for making mobile
-            apps. Our task was to create an app that could turn LEDs on and off and show
-            the changes in real-time on ThingSpeak
-            <br>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Email Assistant</h3>
+                        <p>Gmail automation tool that reads emails, classifies them by category, and automatically performs actions like starring and organizing.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Gmail API</span>
+                            <span>IMAP</span>
+                            <span>Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sunil2409/ai_email_assistant" class="project-link" target="_blank"><i class="fas fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Journal</h3>
+                        <p>An intelligent journaling application for personal note-taking and reflection with a clean, intuitive interface for organizing thoughts and memories.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Application</span>
+                            <span>Note-Taking</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sunil2409/Smart_journal" class="project-link" target="_blank"><i class="fas fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>TODO App</h3>
+                        <p>A comprehensive task management application built with Python for organizing and tracking daily tasks with persistent storage and priority levels.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Task Management</span>
+                            <span>Data Storage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sunil2409/TODO" class="project-link" target="_blank"><i class="fas fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Django Calculator</h3>
+                        <p>A web-based calculator application built with Django framework with advanced mathematical operations and calculation history tracking.</p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>Web Application</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sunil2409/Django_Calculator" class="project-link" target="_blank"><i class="fas fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Python Learnings</h3>
+                        <p>Comprehensive collection of Python learning projects, data structures, algorithms, and problem-solving exercises for continuous skill development.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                            <span>Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sunil2409/Python_learnings" class="project-link" target="_blank"><i class="fas fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="Internship">
-            <img src="intern.png" alt="IOT internship" class="intern_image"> 
-        </div>
-    </div>
-    
-    <div id="skills_section" class="skills">
-        <div class="skills_data">
-            <h1>🔨Skills</h1>
-            <br>
-            - Data Analysis<br>
-            - Python<br>
-            - Front end Development<br>
-            - Hardware Design<br>
-            - Software Design<br>
-            - Verilog<br>
-            - prototyping and wireframing
-        </div>
-        <img src="skills.png" alt="skills" class="skill_image">
-    </div>
+    </section>
 
-    <div class="contact">
-        <h1>📬Contact</h1>
-        <br>
-        Let's create something amazing together! Reach out to me at:
-        <br>
-        - Email: esunilkumar24@gmail.com<br>
-        - Ph no: +91-9087350567
-        <a href="https://www.linkedin.com/in/sunilkumar-elumalai-710080216/" target="_blank">Linkedin</a>
-        <br>
-        Thanks for stopping by my corner of the internet! 💫
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-subtitle">I'm always interested in hearing about new projects and opportunities.</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
 
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>esunilkuma24@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9087350567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Chennai, Ind</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sunil Kumar. All rights reserved.</p>
+            <p>Designed and built with <i class="fas fa-heart"></i> by Sunil Kumar</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
